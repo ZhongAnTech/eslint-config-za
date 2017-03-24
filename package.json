@@ -1,0 +1,44 @@
+{
+  "name": "eslint-config-za",
+  "version": "0.0.1",
+  "description": "ZA's ESLint config, base Airbnb.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.zhonganonline.com/linqun/eslint-config-za"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "za",
+    "zhongan",
+    "airbnb",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "Lin Qun",
+  "license": "MIT",
+  "homepage": "http://gitlab.zhonganonline.com/linqun/eslint-config-za",
+  "dependencies": {
+    "eslint-config-airbnb": "^14.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0"
+  },
+  "peerDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0"
+  },
+  "engines": {
+    "node": ">= 4"
+  }
+}
