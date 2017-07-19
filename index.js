@@ -22,10 +22,4 @@ module.exports = {
     webpackIsomorphicTools: true,
     logger: true,
   },
-  rulesLinks: [
-    'https://github.com/eslint/eslint/tree/master/docs/rules',
-    'https://github.com/benmosher/eslint-plugin-import/tree/master/docs/rules',
-    'https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules',
-    'https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules',
-  ],
 };

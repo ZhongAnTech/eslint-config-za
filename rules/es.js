@@ -22,5 +22,6 @@ module.exports = {
       exports: 'always-multiline',
       functions: 'never',
     }],
+    eqeqeq: ['warn', 'always', { null: 'ignore' }],
   },
 };

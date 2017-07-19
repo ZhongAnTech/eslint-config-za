@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-za",
   "version": "0.0.1",
-  "description": "ZA's ESLint config, base Airbnb. dependencies & devDependencies need sync with eslint-config-airbnb.",
+  "description": "ZhongAn Health eslint config. Base on Airbnb.",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ."
@@ -24,14 +24,13 @@
   "license": "MIT",
   "homepage": "http://gitlab.zhonganonline.com/linqun/eslint-config-za",
   "dependencies": {
-    "eslint-config-airbnb": "^14.1.0"
+    "eslint-config-airbnb": "^15.0.2"
   },
-
   "devDependencies": {
-    "eslint": "^3.17.1",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.0"
+    "eslint": "^3.19.0",
+    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0"
   },
   "engines": {
     "node": ">= 4"
