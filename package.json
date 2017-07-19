@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-za",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "ZhongAn Health eslint config. Base on Airbnb.",
   "main": "index.js",
   "scripts": {
