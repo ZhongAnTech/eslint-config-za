@@ -23,5 +23,6 @@ module.exports = {
       functions: 'never',
     }],
     eqeqeq: ['warn', 'always', { null: 'ignore' }],
+    'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
   },
 };
