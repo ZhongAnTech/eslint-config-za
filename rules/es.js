@@ -24,5 +24,7 @@ module.exports = {
     }],
     eqeqeq: ['warn', 'always', { null: 'ignore' }],
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
+    'no-multi-spaces': ['error', { ignoreEOLComments: true }],
+    'function-paren-newline': ['error', 'consistent'],
   },
 };
