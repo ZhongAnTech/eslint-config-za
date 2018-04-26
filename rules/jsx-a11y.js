@@ -6,9 +6,10 @@ module.exports = {
       'error',
       {
         components: ['Link'],
-        specialLink: ['hrefLeft', 'hrefRight'],
+        specialLink: ['to'],
         aspects: ['noHref', 'invalidHref', 'preferButton'],
       },
     ],
+    'jsx-a11y/click-events-have-key-events': 'off',
   },
 };

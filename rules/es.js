@@ -26,5 +26,6 @@ module.exports = {
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'no-multi-spaces': ['error', { ignoreEOLComments: true }],
     'function-paren-newline': ['error', 'consistent'],
+    'object-curly-newline': 'off',
   },
 };
