@@ -1,6 +1,6 @@
 # eslint-config-za
 
-众安健康**eslint**规则  
+众安**eslint**规则  
 基于[airbnb](https://github.com/airbnb/javascript)提供的的eslint规则，进行二次定制。
 
 ## 使用
@@ -24,8 +24,7 @@
 >`za/es` peerDependencies `eslint` `eslint-plugin-import`  
 
 
-## 版本修订说明
-项目版本不完全遵守语义化版本规则。  
+## 版本修订说明 
 >__参考__  
 >主版本：eslint迭代  
 >次版本：airbnb迭代  
