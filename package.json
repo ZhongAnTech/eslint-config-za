@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://gitlab.zhonganonline.com/linqun/eslint-config-za"
+    "url": "https://github.com/ZhonganTechENG/eslint-config-za"
   },
   "keywords": [
     "eslint",
@@ -22,7 +22,7 @@
   ],
   "author": "Lin Qun",
   "license": "MIT",
-  "homepage": "http://gitlab.zhonganonline.com/linqun/eslint-config-za",
+  "homepage": "https://github.com/ZhonganTechENG/eslint-config-za",
   "dependencies": {
     "eslint-config-airbnb": "^16.1.0"
   },
