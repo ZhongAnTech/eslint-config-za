@@ -4,6 +4,7 @@
   "description": "ZhongAn Health eslint config. Base on Airbnb.",
   "main": "index.js",
   "scripts": {
+    "test": "eslint test",
     "lint": "eslint ."
   },
   "repository": {
