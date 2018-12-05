@@ -18,8 +18,5 @@ module.exports = {
     __CONFIG__: true,
     __DEBUG__: true,
     __DEVTOOLS__: true,
-    __ALLOW_ISOMORPHIC_PROXY__: true,
-    webpackIsomorphicTools: true,
-    logger: true,
   },
 };
