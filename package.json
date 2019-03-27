@@ -1,11 +1,11 @@
 {
   "name": "eslint-config-za",
   "version": "1.1.0-alpha.1",
-  "description": "ZhongAn Health eslint config. Base on Airbnb.",
+  "description": "ZhongAn's ESLint config",
   "main": "index.js",
   "scripts": {
     "sync": "npm install eslint-config-airbnb@latest --save && npx install-peerdeps --dev --only-peers eslint-config-airbnb@latest",
-    "lint": "eslint ."
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx  ."
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
     "zhongan",
     "airbnb",
     "javascript",
+    "typescript",
     "styleguide"
   ],
   "author": "Lin Qun",
@@ -27,12 +28,21 @@
     "eslint-config-airbnb": "^17.1.0"
   },
   "devDependencies": {
-    "eslint": "^5.9.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1"
+    "@typescript-eslint/eslint-plugin": "^1.5.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.3.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "typescript": "^3.3.4000"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.5.0",
+    "babel-eslint": "^10.0.1",
+    "eslint-plugin-react-hooks": "^1.6.0"
   },
   "engines": {
-    "node": ">= 4"
+    "node": ">= 8"
   }
 }
