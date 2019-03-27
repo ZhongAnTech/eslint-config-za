@@ -50,6 +50,20 @@ npm install --save-dev eslint typescript @typescript-eslint/eslint-plugin eslint
 
 ```
 
+## VSCode 中使用
+VSCode 的 ESLink 插件默认并不支持 `ts` `tsx`，需要自行修改插件配置。配置参考如下
+
+```
+{
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ]
+}
+```
+
 
 ## 提示
 

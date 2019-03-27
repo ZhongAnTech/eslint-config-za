@@ -42,7 +42,7 @@ module.exports = {
     '@typescript-eslint/no-triple-slash-reference': 'error',
     '@typescript-eslint/no-type-alias': 'off',
     '@typescript-eslint/no-unnecessary-qualifier': 'off',
-    '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
+    '@typescript-eslint/no-unnecessary-type-assertion': 'off',
     // 编译代替
     '@typescript-eslint/no-unused-vars': 'off',
     // 编译代替
