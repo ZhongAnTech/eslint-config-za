@@ -5,6 +5,13 @@ module.exports = {
     'react/prop-types': 'off',
     'react/jsx-filename-extension': 'off',
     'react/no-array-index-key': 'warn',
+    'react/destructuring-assignment': [
+      'error',
+      'always',
+      {
+        ignoreClassFields: true,
+      },
+    ],
 
     // react hooks
     // https://reactjs.org/docs/hooks-rules.html
