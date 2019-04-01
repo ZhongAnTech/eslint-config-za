@@ -1,7 +1,10 @@
 module.exports = {
   plugins: ['@typescript-eslint'],
   rules: {
-    // 暂时采用 ESLint 内建规则或编译
+    /**
+     * 下列规则基于 ESLint Core 实现
+     * 部分规则暂时可采用 ESLint 内建规则及编译时的静态检查
+     */
     // '@typescript-eslint/indent': [
     //   'error',
     //   2,
@@ -9,11 +12,27 @@ module.exports = {
     //     SwitchCase: 1,
     //   },
     // ],
-    // '@typescript-eslint/camelcase': 'off',
+    // camelcase: 'off',
+    // '@typescript-eslint/camelcase': [
+    //   'error',
+    //   {
+    //     properties: 'never',
+    //   },
+    // ],
     // '@typescript-eslint/no-array-constructor': 'off',
-    // '@typescript-eslint/no-unused-vars': 'off',
-    // '@typescript-eslint/no-useless-constructor': 'error',
     // '@typescript-eslint/no-use-before-define': 'off',
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': [
+      'warn',
+      {
+        vars: 'all',
+        args: 'after-used',
+        caughtErrors: 'none',
+        ignoreRestSiblings: true,
+      },
+    ],
+    '@typescript-eslint/no-useless-constructor': 'error',
+
 
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': 'off',
