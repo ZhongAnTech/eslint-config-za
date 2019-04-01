@@ -78,5 +78,12 @@ module.exports = {
         // },
       },
     ],
+    'object-curly-newline': [
+      'error',
+      {
+        multiline: true,
+        consistent: true,
+      },
+    ],
   },
 };
