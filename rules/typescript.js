@@ -33,16 +33,18 @@ module.exports = {
     ],
     '@typescript-eslint/no-useless-constructor': 'error',
 
-
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': 'off',
     '@typescript-eslint/ban-ts-ignore': 'off',
     '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/class-name-casing': 'error',
     '@typescript-eslint/explicit-function-return-type': 'off',
-    // 规则如提供 noPublic 时， 原则上需要启用
-    // https://github.com/typescript-eslint/typescript-eslint/issues/214
-    '@typescript-eslint/explicit-member-accessibility': 'off',
+    '@typescript-eslint/explicit-member-accessibility': [
+      'error',
+      {
+        accessibility: 'no-public',
+      },
+    ],
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/member-delimiter-style': 'error',
     '@typescript-eslint/member-naming': 'off',
