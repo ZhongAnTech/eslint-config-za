@@ -1,6 +1,4 @@
 module.exports = {
-  // 默认使用 babel-eslint 作为解析器，用于解析 eslint 未支持但常用的语法
-  parser: 'babel-eslint',
   parserOptions: {
     // ecmaVersion 和 sourceType 继承自 eslint-config-airbnb
     ecmaFeatures: {
