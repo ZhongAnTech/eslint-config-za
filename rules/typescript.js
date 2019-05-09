@@ -32,7 +32,9 @@ module.exports = {
       },
     ],
     '@typescript-eslint/no-useless-constructor': 'error',
+    // 使用 @typescript-eslint/semi
     semi: 'off',
+    'babel/semi': 'off',
     '@typescript-eslint/semi': ['error', 'always'],
 
     '@typescript-eslint/adjacent-overload-signatures': 'error',

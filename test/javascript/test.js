@@ -1,8 +1,4 @@
-export default interface Interface {
-  member: string;
-}
-
-export class Class {
+class Class {
   instanceProperty = 1;
 
   instancePropertyMethod = () => {
@@ -14,3 +10,5 @@ export class Class {
     console.info(this);
   }
 }
+
+export default Class;

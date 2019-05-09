@@ -7,4 +7,5 @@ module.exports = {
     './rules/react',
     './configs/base',
   ].map(require.resolve),
+  parser: 'babel-eslint',
 };

@@ -11,7 +11,7 @@
 ### JavaScrip
 
 ```
-npm install --save-dev eslint babel-eslint eslint-plugin-import eslint-config-za
+npm install --save-dev eslint babel-eslint eslint-plugin-babel eslint-plugin-import eslint-config-za
 ```
 
 ```json
@@ -25,7 +25,7 @@ npm install --save-dev eslint babel-eslint eslint-plugin-import eslint-config-za
 ### React
 
 ```
-npm install --save-dev eslint babel-eslint eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-config-za
+npm install --save-dev eslint babel-eslint eslint-plugin-babel eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-config-za
 ```
 
 ```json
@@ -39,7 +39,7 @@ npm install --save-dev eslint babel-eslint eslint-plugin-import eslint-plugin-re
 ### Vue
 
 ```
-npm install --save-dev eslint babel-eslint eslint-plugin-import eslint-plugin-vue eslint-config-za
+npm install --save-dev eslint babel-eslint eslint-plugin-babel eslint-plugin-import eslint-plugin-vue eslint-config-za
 ```
 
 ```json
@@ -53,7 +53,7 @@ npm install --save-dev eslint babel-eslint eslint-plugin-import eslint-plugin-vu
 ### TypeScript
 
 ```
-npm install --save-dev eslint typescript @typescript-eslint/eslint-plugin eslint-plugin-import eslint-config-za
+npm install --save-dev eslint typescript  eslint-plugin-babel eslint-plugin-import @typescript-eslint/eslint-plugin eslint-config-za
 ```
 
 ```json

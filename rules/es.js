@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: ['babel'],
   rules: {
     'linebreak-style': 'off',
     'func-names': ['error', 'as-needed'],
@@ -85,5 +86,8 @@ module.exports = {
         consistent: true,
       },
     ],
+    // 使用 babel/semi，实例属性需要加分号
+    semi: 'off',
+    'babel/semi': ['error', 'always'],
   },
 };
