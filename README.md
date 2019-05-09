@@ -82,11 +82,11 @@ VSCode 的 ESLink 插件默认并不支持 `vue` `ts` `tsx`，需要自行修改
 
 ## 提示
 
-**eslint-config-za** 及其依赖规则 **eslint-config-airbnb**，都定义了相应的 `peerDependencies`。因此选择不同规则时需要自行安装对应的依赖。具体参考[使用](#使用)说明。  
+**eslint-config-za** 定义了相应的 `peerDependencies`。因此选择不同规则时需要自行安装对应的依赖。具体参考[使用](#使用)说明。  
 
 ```
 npm info "eslint-config-za@latest" peerDependencies
-npm info "eslint-config-airbnb@latest" peerDependencies
+npx install-peerdeps --dev eslint-config-za
 ```
 
 
