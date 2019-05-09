@@ -32,6 +32,8 @@ module.exports = {
       },
     ],
     '@typescript-eslint/no-useless-constructor': 'error',
+    semi: 'off',
+    '@typescript-eslint/semi': ['error', 'always'],
 
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': 'off',

@@ -89,6 +89,9 @@ npm info "eslint-config-za@latest" peerDependencies
 npx install-peerdeps --dev eslint-config-za
 ```
 
+### 打印规则
+
+> npx eslint --print-config .eslintrc > /path/you/file
 
 ## 规则链接
 [eslint](https://github.com/eslint/eslint/tree/master/docs/rules)  

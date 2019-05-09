@@ -1,5 +1,4 @@
 {
-  "extends": [
-    "../../vue.js"
-  ]
+  "root": true,
+  "extends": "../../vue.js"
 }
