@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/eslint-config-za.svg)](https://www.npmjs.com/package/eslint-config-za)
 
 众安 **ESLint** 规则  
-基于[airbnb](https://github.com/airbnb/javascript)的eslint规则，进行二次定制。
+基于[airbnb](https://github.com/airbnb/javascript)的 ESLint 规则，进行二次定制。
 
 
 ## 使用
@@ -36,6 +36,20 @@ npm install --save-dev eslint babel-eslint eslint-plugin-import eslint-plugin-re
 
 ```
 
+### Vue
+
+```
+npm install --save-dev eslint babel-eslint eslint-plugin-import eslint-plugin-vue eslint-config-za
+```
+
+```json
+{
+  "root": true,
+  "extends": "za/vue"
+}
+
+```
+
 ### TypeScript
 
 ```
@@ -51,7 +65,7 @@ npm install --save-dev eslint typescript @typescript-eslint/eslint-plugin eslint
 ```
 
 ## VSCode 中使用
-VSCode 的 ESLink 插件默认并不支持 `ts` `tsx`，需要自行修改插件配置。配置参考如下
+VSCode 的 ESLink 插件默认并不支持 `vue` `ts` `tsx`，需要自行修改插件配置。配置参考如下
 
 ```
 {
@@ -59,7 +73,8 @@ VSCode 的 ESLink 插件默认并不支持 `ts` `tsx`，需要自行修改插件
         "javascript",
         "javascriptreact",
         "typescript",
-        "typescriptreact"
+        "typescriptreact",
+        ""vue"
     ]
 }
 ```
