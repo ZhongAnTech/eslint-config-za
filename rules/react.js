@@ -58,6 +58,7 @@ module.exports = {
         },
       },
     ],
+    'react/button-has-type': 'off',
 
     // react hooks
     // https://reactjs.org/docs/hooks-rules.html
