@@ -1,10 +1,18 @@
 # eslint-config-za
 
-众安**eslint**规则  
-基于[airbnb](https://github.com/airbnb/javascript)提供的的eslint规则，进行二次定制。
+[![npm version](https://badge.fury.io/js/eslint-config-za.svg)](https://www.npmjs.com/package/eslint-config-za)
+
+众安 **ESLint** 规则  
+基于[airbnb](https://github.com/airbnb/javascript)的 ESLint 规则，进行二次定制。
+
 
 ## 使用
-添加 `"extends": "za"` 或 `"extends": "za/es"` 到 .eslintrc/.eslintrc.json
+
+### JavaScrip
+
+```
+npm install --save-dev eslint babel-eslint eslint-plugin-babel eslint-plugin-import eslint-config-za
+```
 
 ```json
 {
@@ -14,24 +22,81 @@
 
 ```
 
+### React
+
+```
+npm install --save-dev eslint babel-eslint eslint-plugin-babel eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-config-za
+```
+
+```json
+{
+  "root": true,
+  "extends": "za/react"
+}
+
+```
+
+### Vue
+
+```
+npm install --save-dev eslint babel-eslint eslint-plugin-babel eslint-plugin-import eslint-plugin-vue eslint-config-za
+```
+
+```json
+{
+  "root": true,
+  "extends": "za/vue"
+}
+
+```
+
+### TypeScript
+
+```
+npm install --save-dev eslint typescript  eslint-plugin-babel eslint-plugin-import @typescript-eslint/eslint-plugin eslint-config-za
+```
+
+```json
+{
+  "root": true,
+  "extends": "za/typescript"
+}
+
+```
+
+## VSCode 中使用
+VSCode 的 ESLink 插件默认并不支持 `vue` `ts` `tsx`，需要自行修改插件配置。配置参考如下
+
+```
+{
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        ""vue"
+    ]
+}
+```
+
+
 ## 提示
 
-**`eslint-config-airbnb peerDependencies`**  
+**eslint-config-za** 定义了相应的 `peerDependencies`。因此选择不同规则时需要自行安装对应的依赖。具体参考[使用](#使用)说明。  
 
-不同规则依赖的模块有所不同，使用时按需选择。  
+```
+npm info "eslint-config-za@latest" peerDependencies
+npx install-peerdeps --dev eslint-config-za
+```
 
->`za` peerDependencies `eslint` `eslint-plugin-import` `eslint-plugin-react` `eslint-plugin-jsx-a11y`  
->`za/es` peerDependencies `eslint` `eslint-plugin-import`  
+### 打印规则
 
-
-## 版本修订说明 
->__参考__  
->主版本：eslint迭代  
->次版本：airbnb迭代  
->修订号：规则迭代  
+> npx eslint --print-config .eslintrc > /path/you/file
 
 ## 规则链接
 [eslint](https://github.com/eslint/eslint/tree/master/docs/rules)  
 [import](https://github.com/benmosher/eslint-plugin-import/tree/master/docs/rules)  
 [jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules)  
-[react](https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules)
+[react](https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules)  
+[react-hooks](https://reactjs.org/docs/hooks-rules.html)  
+[typescript](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules)

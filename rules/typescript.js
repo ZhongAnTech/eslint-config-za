@@ -1,0 +1,136 @@
+module.exports = {
+  plugins: ['@typescript-eslint'],
+  rules: {
+    /**
+     * 下列规则基于 ESLint Core 实现
+     * 部分规则需要关闭 ESLint 自身规则
+     * 部分规则暂时可采用 ESLint 内建规则及编译时的静态检查
+     */
+    /* ----- start ----- */
+    // '@typescript-eslint/no-array-constructor': 'off',
+    // '@typescript-eslint/no-use-before-define': 'off',
+    '@typescript-eslint/no-useless-constructor': 'error',
+
+    // indent: 'off',
+    // '@typescript-eslint/indent': [
+    //   'error',
+    //   2,
+    //   {
+    //     SwitchCase: 1,
+    //     VariableDeclarator: 1,
+    //     outerIIFEBody: 1,
+    //     FunctionDeclaration: {
+    //       parameters: 1,
+    //       body: 1,
+    //     },
+    //     FunctionExpression: {
+    //       parameters: 1,
+    //       body: 1,
+    //     },
+    //     CallExpression: {
+    //       arguments: 1,
+    //     },
+    //     ArrayExpression: 1,
+    //     ObjectExpression: 1,
+    //     ImportDeclaration: 1,
+    //     flatTernaryExpressions: false,
+    //     ignoredNodes: [
+    //       'JSXElement',
+    //       'JSXElement > *',
+    //       'JSXAttribute',
+    //       'JSXIdentifier',
+    //       'JSXNamespacedName',
+    //       'JSXMemberExpression',
+    //       'JSXSpreadAttribute',
+    //       'JSXExpressionContainer',
+    //       'JSXOpeningElement',
+    //       'JSXClosingElement',
+    //       'JSXText',
+    //       'JSXEmptyExpression',
+    //       'JSXSpreadChild',
+    //     ],
+    //     ignoreComments: false,
+    //   },
+    // ],
+
+    // camelcase: 'off',
+    // '@typescript-eslint/camelcase': [
+    //   'error',
+    //   {
+    //     properties: 'never',
+    //   },
+    // ],
+
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': [
+      'warn',
+      {
+        vars: 'all',
+        args: 'after-used',
+        caughtErrors: 'none',
+        ignoreRestSiblings: true,
+      },
+    ],
+
+    semi: 'off',
+    'babel/semi': 'off',
+    '@typescript-eslint/semi': ['error', 'always'],
+
+    // 'func-call-spacing': 'off',
+    // '@typescript-eslint/func-call-spacing': ['error', 'never'],
+
+    // 'no-extra-parens': 'off',
+    // '@typescript-eslint/no-extra-parens': 'off',
+
+    // 'no-magic-numbers': 'off',
+    // '@typescript-eslint/no-magic-numbers': 'off',
+    /* ----- end ----- */
+
+    '@typescript-eslint/adjacent-overload-signatures': 'error',
+    '@typescript-eslint/array-type': 'off',
+    '@typescript-eslint/ban-ts-ignore': 'off',
+    '@typescript-eslint/ban-types': 'off',
+    '@typescript-eslint/class-name-casing': 'error',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-member-accessibility': [
+      'error',
+      {
+        accessibility: 'no-public',
+      },
+    ],
+    '@typescript-eslint/interface-name-prefix': 'off',
+    '@typescript-eslint/member-delimiter-style': 'error',
+    '@typescript-eslint/member-naming': 'off',
+    '@typescript-eslint/no-angle-bracket-type-assertion': 'error',
+    '@typescript-eslint/no-empty-interface': 'error',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-extraneous-class': 'off',
+    '@typescript-eslint/no-for-in-array': 'off',
+    '@typescript-eslint/no-inferrable-types': 'error',
+    '@typescript-eslint/no-misused-new': 'error',
+    '@typescript-eslint/no-namespace': [
+      'error',
+      {
+        allowDeclarations: true,
+        allowDefinitionFiles: true,
+      },
+    ],
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-object-literal-type-assertion': 'error',
+    '@typescript-eslint/no-parameter-properties': 'error',
+    '@typescript-eslint/no-require-imports': 'off',
+    '@typescript-eslint/no-this-alias': 'error',
+    '@typescript-eslint/no-triple-slash-reference': 'error',
+    '@typescript-eslint/no-type-alias': 'off',
+    '@typescript-eslint/no-unnecessary-qualifier': 'off',
+    '@typescript-eslint/no-unnecessary-type-assertion': 'off',
+    '@typescript-eslint/no-var-requires': 'error',
+    '@typescript-eslint/prefer-function-type': 'error',
+    '@typescript-eslint/prefer-interface': 'error',
+    '@typescript-eslint/prefer-namespace-keyword': 'error',
+    '@typescript-eslint/promise-function-async': 'off',
+    '@typescript-eslint/restrict-plus-operands': 'off',
+    '@typescript-eslint/type-annotation-spacing': 'error',
+    '@typescript-eslint/unified-signatures': 'error',
+  },
+};

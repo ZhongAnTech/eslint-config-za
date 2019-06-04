@@ -3,7 +3,8 @@ module.exports = {
     'eslint-config-airbnb-base',
     './rules/es',
     './rules/import',
+    './rules/typescript',
     './configs/base',
   ].map(require.resolve),
-  parser: 'babel-eslint',
+  parser: '@typescript-eslint/parser',
 };
