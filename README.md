@@ -65,7 +65,7 @@ npm install --save-dev eslint typescript  eslint-plugin-babel eslint-plugin-impo
 ```
 
 ## VSCode 中使用
-VSCode 的 ESLink 插件默认并不支持 `vue` `ts` `tsx`，需要自行修改插件配置。配置参考如下
+VSCode 的 ESLint 插件默认并不支持 `vue` `ts` `tsx`，需要自行修改插件配置。配置参考如下
 
 ```
 {
@@ -74,7 +74,7 @@ VSCode 的 ESLink 插件默认并不支持 `vue` `ts` `tsx`，需要自行修改
         "javascriptreact",
         "typescript",
         "typescriptreact",
-        ""vue"
+        "vue"
     ]
 }
 ```

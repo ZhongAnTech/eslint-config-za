@@ -1,3 +1,7 @@
+function test() {
+  console.log('....');
+}
+
 class Class {
   instanceProperty = 1;
 
@@ -5,6 +9,7 @@ class Class {
     // ...
   };
 
+  @test
   instanceMethod() {
     // ... shold use `this`
     console.info(this);
