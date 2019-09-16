@@ -1,0 +1,6 @@
+{
+  "root": true,
+  "extends": [
+    "../../typescript-vue.js"
+  ]
+}

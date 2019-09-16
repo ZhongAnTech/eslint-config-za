@@ -52,3 +52,7 @@ webpack-stats.json
 assets/
 
 .eslintconfig
+
+# lock
+package-lock.json
+yarn.lock

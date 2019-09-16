@@ -1,20 +1,3 @@
-// member-delimiter-style
-interface Foo {
-  name: string,
-  greet(): void,
-}
-
-// no-empty-interface
-interface Empty {}
-
-// no-inferrable-types
-const a: boolean = true;
-
-// no-misused-new
-class C {
-  new(): C;
-}
-
 export default interface Interface {
   member: string;
 }
