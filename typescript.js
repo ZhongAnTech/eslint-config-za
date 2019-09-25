@@ -1,10 +1,10 @@
 module.exports = {
   extends: [
+    './configs/base',
     'eslint-config-airbnb-base',
     './rules/es',
     './rules/import',
     './rules/typescript',
-    './configs/base',
   ].map(require.resolve),
   parser: '@typescript-eslint/parser',
 };
