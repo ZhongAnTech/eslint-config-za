@@ -60,6 +60,7 @@ module.exports = {
     ],
     'react/jsx-one-expression-per-line': 'off',
     'react/button-has-type': 'off',
+    'react/jsx-props-no-spreading': 'off',
 
     // react hooks
     // https://reactjs.org/docs/hooks-rules.html
