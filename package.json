@@ -8,7 +8,8 @@
   },
   "scripts": {
     "sync": "npm install --save $npm_package_config_airbnb && npx install-peerdeps --dev --only-peers $npm_package_config_airbnb",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.vue  .; exit 0"
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.vue  .; exit 0",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -41,6 +42,8 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.0.1",
     "eslint-plugin-vue": "^5.2.3",
+    "jest": "^24.9.0",
+    "jest-runner-eslint": "^0.7.4",
     "typescript": "^3.6.3"
   },
   "peerDependencies": {
@@ -58,5 +61,24 @@
   },
   "engines": {
     "node": ">= 8"
+  },
+  "jest": {
+    "projects": [
+      {
+        "displayName": "snapshot",
+        "testMatch": ["<rootDir>/test/**/snapshot.test.js"]
+      },
+      {
+        "runner": "jest-runner-eslint",
+        "displayName": "lint",
+        "testMatch": ["<rootDir>/test/**/rules/*"]
+      }
+    ]
+  },
+  
+  "jest-runner-eslint": {
+    "cliOptions": {
+      "ext": [".js", ".jsx", ".ts", ".tsx", ".vue"]
+    }
   }
 }

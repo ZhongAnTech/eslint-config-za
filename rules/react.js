@@ -62,6 +62,9 @@ module.exports = {
     'react/button-has-type': 'off',
     'react/jsx-props-no-spreading': 'off',
 
+    'react/state-in-constructor': 'off',
+    'react/static-property-placement': ['error', 'static public field'],
+
     // react hooks
     // https://reactjs.org/docs/hooks-rules.html
     'react-hooks/rules-of-hooks': 'error',

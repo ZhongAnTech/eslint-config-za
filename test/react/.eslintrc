@@ -1,6 +1,7 @@
 {
   "root": true,
-  "extends": [
-    "../../react.js"
-  ]
+  "extends": "../../react.js",
+  "env": {
+    "jest": true
+  }
 }
