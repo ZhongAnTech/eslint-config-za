@@ -3,3 +3,4 @@
 .prettierrc
 test/
 yarn.lock
+*.log
