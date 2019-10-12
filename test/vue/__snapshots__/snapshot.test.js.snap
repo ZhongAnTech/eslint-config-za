@@ -632,8 +632,8 @@ Object {
       "starred-block",
     ],
     "multiline-ternary": Array [
-      "off",
-      "never",
+      "error",
+      "always-multiline",
     ],
     "new-cap": Array [
       "error",

@@ -917,8 +917,8 @@ Object {
       "starred-block",
     ],
     "multiline-ternary": Array [
-      "off",
-      "never",
+      "error",
+      "always-multiline",
     ],
     "new-cap": Array [
       "error",
@@ -2102,7 +2102,7 @@ Object {
       "error",
     ],
     "react/no-deprecated": Array [
-      "error",
+      "warn",
     ],
     "react/no-did-mount-set-state": Array [
       "off",
@@ -2234,7 +2234,6 @@ Object {
             "componentDidUpdate",
             "componentDidCatch",
             "componentWillUnmount",
-            "componentDidCatch",
           ],
           "rendering": Array [
             "/^render.+$/",
@@ -2242,6 +2241,7 @@ Object {
           ],
         },
         "order": Array [
+          "static-variables",
           "static-methods",
           "instance-variables",
           "lifecycle",
