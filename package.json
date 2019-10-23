@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-za",
-  "version": "2.1.0-alpha.6",
+  "version": "2.1.0",
   "description": "ZhongAn's ESLint config",
   "main": "index.js",
   "config": {
@@ -9,7 +9,8 @@
   "scripts": {
     "sync": "npm install --save $npm_package_config_airbnb && npx install-peerdeps --dev --only-peers $npm_package_config_airbnb",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.vue  .; exit 0",
-    "test": "jest"
+    "test": "jest",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "@typescript-eslint/eslint-plugin": "^2.2.0",
     "@typescript-eslint/parser": "^2.2.0",
     "babel-eslint": "^10.0.1",
+    "conventional-changelog-cli": "^2.0.25",
     "eslint": "^6.1.0",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.18.2",
@@ -66,19 +68,28 @@
     "projects": [
       {
         "displayName": "snapshot",
-        "testMatch": ["<rootDir>/test/**/snapshot.test.js"]
+        "testMatch": [
+          "<rootDir>/test/**/snapshot.test.js"
+        ]
       },
       {
         "runner": "jest-runner-eslint",
         "displayName": "lint",
-        "testMatch": ["<rootDir>/test/**/rules/*"]
+        "testMatch": [
+          "<rootDir>/test/**/rules/*"
+        ]
       }
     ]
   },
-  
   "jest-runner-eslint": {
     "cliOptions": {
-      "ext": [".js", ".jsx", ".ts", ".tsx", ".vue"]
+      "ext": [
+        ".js",
+        ".jsx",
+        ".ts",
+        ".tsx",
+        ".vue"
+      ]
     }
   }
 }
