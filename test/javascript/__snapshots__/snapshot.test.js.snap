@@ -15,8 +15,9 @@ Object {
     "__DEVTOOLS__": true,
     "__SERVER__": true,
   },
+  "ignorePatterns": Array [],
   "noInlineConfig": undefined,
-  "parser": "/Users/jinasonlin/GitRepo/ZhongAn/health-fe/eslint-config-za/node_modules/babel-eslint/lib/index.js",
+  "parser": "/Users/taohongyong/Documents/project/github/eslint-config-za/node_modules/babel-eslint/lib/index.js",
   "parserOptions": Object {
     "allowImportExportEverywhere": false,
     "ecmaFeatures": Object {
@@ -50,6 +51,7 @@ Object {
       "error",
       Object {
         "allowImplicit": true,
+        "checkForEach": false,
       },
     ],
     "array-element-newline": Array [
@@ -102,6 +104,7 @@ Object {
       "error",
       Object {
         "ignoreDestructuring": false,
+        "ignoreImports": false,
         "properties": "never",
       },
     ],
@@ -190,6 +193,12 @@ Object {
         "commentPattern": "^no default$",
       },
     ],
+    "default-case-last": Array [
+      "off",
+    ],
+    "default-param-last": Array [
+      "off",
+    ],
     "dot-location": Array [
       "error",
       "property",
@@ -235,6 +244,10 @@ Object {
       "off",
       "expression",
     ],
+    "function-call-argument-newline": Array [
+      "off",
+      "consistent",
+    ],
     "function-paren-newline": Array [
       "error",
       "consistent",
@@ -253,6 +266,9 @@ Object {
       },
     ],
     "global-require": Array [
+      "off",
+    ],
+    "grouped-accessor-pairs": Array [
       "off",
     ],
     "guard-for-in": Array [
@@ -346,6 +362,7 @@ Object {
     "import/no-cycle": Array [
       "error",
       Object {
+        "ignoreExternal": false,
         "maxDepth": Infinity,
       },
     ],
@@ -385,6 +402,7 @@ Object {
           "**/Gruntfile{,.js}",
           "**/protractor.conf.js",
           "**/protractor.conf.*.js",
+          "**/karma.conf.js",
         ],
         "optionalDependencies": false,
       },
@@ -445,6 +463,9 @@ Object {
     ],
     "import/no-useless-path-segments": Array [
       "error",
+      Object {
+        "commonjs": true,
+      },
     ],
     "import/no-webpack-loader-syntax": Array [
       "error",
@@ -500,10 +521,14 @@ Object {
           "JSXExpressionContainer",
           "JSXOpeningElement",
           "JSXClosingElement",
+          "JSXFragment",
+          "JSXOpeningFragment",
+          "JSXClosingFragment",
           "JSXText",
           "JSXEmptyExpression",
           "JSXSpreadChild",
         ],
+        "offsetTernaryExpressions": false,
         "outerIIFEBody": 1,
       },
     ],
@@ -529,15 +554,12 @@ Object {
         "overrides": Object {
           "case": Object {
             "after": true,
-            "before": true,
           },
           "return": Object {
             "after": true,
-            "before": true,
           },
           "throw": Object {
             "after": true,
-            "before": true,
           },
         },
       },
@@ -728,6 +750,9 @@ Object {
     "no-constant-condition": Array [
       "warn",
     ],
+    "no-constructor-return": Array [
+      "off",
+    ],
     "no-continue": Array [
       "error",
     ],
@@ -748,6 +773,9 @@ Object {
     ],
     "no-dupe-class-members": Array [
       "error",
+    ],
+    "no-dupe-else-if": Array [
+      "off",
     ],
     "no-dupe-keys": Array [
       "error",
@@ -848,6 +876,9 @@ Object {
     "no-implied-eval": Array [
       "error",
     ],
+    "no-import-assign": Array [
+      "off",
+    ],
     "no-inline-comments": Array [
       "off",
     ],
@@ -884,6 +915,9 @@ Object {
     ],
     "no-loop-func": Array [
       "error",
+    ],
+    "no-loss-of-precision": Array [
+      "off",
     ],
     "no-magic-numbers": Array [
       "off",
@@ -968,8 +1002,8 @@ Object {
     "no-multiple-empty-lines": Array [
       "error",
       Object {
-        "max": 2,
-        "maxBOF": 1,
+        "max": 1,
+        "maxBOF": 0,
         "maxEOF": 0,
       },
     ],
@@ -1020,6 +1054,7 @@ Object {
           "accumulator",
           "e",
           "ctx",
+          "context",
           "req",
           "request",
           "res",
@@ -1056,6 +1091,15 @@ Object {
     ],
     "no-regex-spaces": Array [
       "error",
+    ],
+    "no-restricted-exports": Array [
+      "off",
+      Object {
+        "restrictedNamedExports": Array [
+          "default",
+          "then",
+        ],
+      },
     ],
     "no-restricted-globals": Array [
       "error",
@@ -1222,6 +1266,9 @@ Object {
     "no-sequences": Array [
       "error",
     ],
+    "no-setter-return": Array [
+      "off",
+    ],
     "no-shadow": Array [
       "error",
     ],
@@ -1274,6 +1321,7 @@ Object {
         "allow": Array [],
         "allowAfterSuper": false,
         "allowAfterThis": false,
+        "allowAfterThisConstructor": false,
         "enforceInMethodNames": true,
       },
     ],
@@ -1325,6 +1373,9 @@ Object {
         "functions": true,
         "variables": true,
       },
+    ],
+    "no-useless-backreference": Array [
+      "off",
     ],
     "no-useless-call": Array [
       "off",
@@ -1476,6 +1527,9 @@ Object {
         "enforceForRenamedProperties": false,
       },
     ],
+    "prefer-exponentiation-operator": Array [
+      "off",
+    ],
     "prefer-named-capture-group": Array [
       "off",
     ],
@@ -1492,6 +1546,9 @@ Object {
       },
     ],
     "prefer-reflect": Array [
+      "off",
+    ],
+    "prefer-regex-literals": Array [
       "off",
     ],
     "prefer-rest-params": Array [
@@ -1632,6 +1689,7 @@ Object {
           "markers": Array [
             "=",
             "!",
+            "/",
           ],
         },
       },

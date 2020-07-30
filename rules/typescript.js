@@ -53,14 +53,6 @@ module.exports = {
     //   },
     // ],
 
-    // camelcase: 'off',
-    // '@typescript-eslint/camelcase': [
-    //   'error',
-    //   {
-    //     properties: 'never',
-    //   },
-    // ],
-
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': [
       'warn',
@@ -84,7 +76,6 @@ module.exports = {
 
     // 'no-magic-numbers': 'off',
     // '@typescript-eslint/no-magic-numbers': 'off',
-
 
     /* ----------  @typescript-eslint v2 BREAKING CHANGES.  ---------- */
 
@@ -112,14 +103,27 @@ module.exports = {
       },
     ],
 
-
     /* ----------  rules  ---------- */
 
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': 'off',
-    '@typescript-eslint/ban-ts-ignore': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/ban-types': 'off',
-    '@typescript-eslint/class-name-casing': 'error',
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: 'class',
+        format: ['PascalCase'],
+      },
+      {
+        selector: 'interface',
+        format: null,
+      },
+      {
+        selector: 'variable',
+        format: null,
+      },
+    ],
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-member-accessibility': [
       'error',
@@ -127,9 +131,7 @@ module.exports = {
         accessibility: 'no-public',
       },
     ],
-    '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/member-delimiter-style': 'error',
-    '@typescript-eslint/member-naming': 'off',
     '@typescript-eslint/no-empty-interface': 'error',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-extraneous-class': 'off',
