@@ -252,7 +252,6 @@ Object {
       "error",
       Object {
         "ignoreDestructuring": false,
-        "ignoreGlobals": false,
         "ignoreImports": false,
         "properties": "never",
       },
@@ -1471,7 +1470,6 @@ Object {
         "allowAfterSuper": false,
         "allowAfterThis": false,
         "allowAfterThisConstructor": false,
-        "allowFunctionParams": true,
         "enforceInMethodNames": true,
       },
     ],
