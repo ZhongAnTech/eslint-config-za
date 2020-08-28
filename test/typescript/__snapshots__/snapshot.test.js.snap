@@ -17,7 +17,6 @@ Object {
   },
   "ignorePatterns": Array [],
   "noInlineConfig": undefined,
-  "parser": "/Users/taohongyong/Documents/project/github/eslint-config-za/node_modules/@typescript-eslint/parser/dist/index.js",
   "parserOptions": Object {
     "allowImportExportEverywhere": false,
     "ecmaFeatures": Object {
@@ -248,6 +247,7 @@ Object {
       "error",
       Object {
         "ignoreDestructuring": false,
+        "ignoreGlobals": false,
         "ignoreImports": false,
         "properties": "never",
       },
@@ -1466,6 +1466,7 @@ Object {
         "allowAfterSuper": false,
         "allowAfterThis": false,
         "allowAfterThisConstructor": false,
+        "allowFunctionParams": true,
         "enforceInMethodNames": true,
       },
     ],
