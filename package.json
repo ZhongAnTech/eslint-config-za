@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-za",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "ZhongAn's ESLint config",
   "main": "index.js",
   "config": {
