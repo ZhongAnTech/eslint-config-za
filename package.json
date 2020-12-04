@@ -4,10 +4,10 @@
   "description": "ZhongAn's ESLint config",
   "main": "index.js",
   "config": {
-    "airbnb": "eslint-config-airbnb@18.2.0"
+    "upstream": "eslint-config-airbnb@^18.2.0"
   },
   "scripts": {
-    "sync": "npm install --save $npm_package_config_airbnb && npx install-peerdeps --dev --only-peers $npm_package_config_airbnb",
+    "sync": "npm install --save $npm_package_config_upstream && npx install-peerdeps --dev --only-peers $npm_package_config_upstream",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.vue  .; exit 0",
     "test": "jest",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
@@ -39,7 +39,7 @@
     "conventional-changelog-cli": "^2.0.25",
     "eslint": "^7.2.0",
     "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.0.0",
@@ -54,7 +54,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
     "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.3.0",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4 || ^3 || ^2.3.0 || ^1.7.0",
