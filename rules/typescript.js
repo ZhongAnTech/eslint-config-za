@@ -7,8 +7,17 @@ module.exports = {
      * 部分规则需要关闭 ESLint 自身规则
      * 部分规则暂时可采用 ESLint 内建规则及编译时的静态检查
      */
-    // '@typescript-eslint/no-array-constructor': 'off',
-    // '@typescript-eslint/no-use-before-define': 'off',
+
+    'no-array-constructor': 'off',
+    '@typescript-eslint/no-array-constructor': 'error',
+
+    /**
+     * 通过编译阶段检查
+     */
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
+
+    'no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-constructor': 'error',
 
     // indent: 'off',
