@@ -4,10 +4,10 @@
   "description": "ZhongAn's ESLint config",
   "main": "index.js",
   "config": {
-    "airbnb": "eslint-config-airbnb@18.2.0"
+    "upstream": "eslint-config-airbnb@^18.2.0"
   },
   "scripts": {
-    "sync": "npm install --save $npm_package_config_airbnb && npx install-peerdeps --dev --only-peers $npm_package_config_airbnb",
+    "sync": "npm install --save $npm_package_config_upstream && npx install-peerdeps --dev --only-peers $npm_package_config_upstream",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.vue  .; exit 0",
     "test": "jest",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
