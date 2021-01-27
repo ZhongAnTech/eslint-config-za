@@ -8,6 +8,6 @@ module.exports = {
   ].map(require.resolve),
   parser: 'vue-eslint-parser',
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: '@babel/eslint-parser',
   },
 };
