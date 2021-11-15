@@ -19,6 +19,11 @@ Object {
   "noInlineConfig": undefined,
   "parserOptions": Object {
     "allowImportExportEverywhere": false,
+    "babelOptions": Object {
+      "presets": Array [
+        "@babel/preset-react",
+      ],
+    },
     "ecmaFeatures": Object {
       "generators": false,
       "globalReturn": true,
@@ -34,11 +39,15 @@ Object {
     "import",
     "react",
     "jsx-a11y",
-    "babel",
+    "@babel",
     "react-hooks",
   ],
   "reportUnusedDisableDirectives": undefined,
   "rules": Object {
+    "@babel/semi": Array [
+      "error",
+      "always",
+    ],
     "accessor-pairs": Array [
       "off",
     ],
@@ -82,10 +91,6 @@ Object {
         "before": true,
       },
     ],
-    "babel/semi": Array [
-      "error",
-      "always",
-    ],
     "block-scoped-var": Array [
       "error",
     ],
@@ -107,6 +112,7 @@ Object {
       "error",
       Object {
         "ignoreDestructuring": false,
+        "ignoreGlobals": false,
         "ignoreImports": false,
         "properties": "never",
       },
@@ -300,6 +306,9 @@ Object {
     "id-blacklist": Array [
       "off",
     ],
+    "id-denylist": Array [
+      "off",
+    ],
     "id-length": Array [
       "off",
     ],
@@ -383,7 +392,7 @@ Object {
       "error",
       Object {
         "ignoreExternal": false,
-        "maxDepth": Infinity,
+        "maxDepth": "∞",
       },
     ],
     "import/no-default-export": Array [
@@ -470,6 +479,7 @@ Object {
       "off",
       Object {
         "caseSensitive": true,
+        "caseSensitiveStrict": false,
         "commonjs": true,
       },
     ],
@@ -500,6 +510,7 @@ Object {
             "internal",
           ],
         ],
+        "warnOnUnassignedImports": false,
       },
     ],
     "import/prefer-default-export": Array [
@@ -556,7 +567,7 @@ Object {
       "off",
     ],
     "jsx-a11y/accessible-emoji": Array [
-      "error",
+      "off",
     ],
     "jsx-a11y/alt-text": Array [
       "error",
@@ -608,7 +619,6 @@ Object {
       "error",
       Object {
         "ignoreNonDOM": false,
-        "ignoreNonDom": false,
       },
     ],
     "jsx-a11y/aria-unsupported-elements": Array [
@@ -1372,6 +1382,9 @@ Object {
     "no-process-exit": Array [
       "off",
     ],
+    "no-promise-executor-return": Array [
+      "off",
+    ],
     "no-proto": Array [
       "error",
     ],
@@ -1395,8 +1408,14 @@ Object {
     ],
     "no-restricted-globals": Array [
       "error",
-      "isFinite",
-      "isNaN",
+      Object {
+        "message": "Use Number.isFinite instead https://github.com/airbnb/javascript#standard-library--isfinite",
+        "name": "isFinite",
+      },
+      Object {
+        "message": "Use Number.isNaN instead https://github.com/airbnb/javascript#standard-library--isnan",
+        "name": "isNaN",
+      },
       "addEventListener",
       "blur",
       "close",
@@ -1616,6 +1635,7 @@ Object {
         "allowAfterSuper": false,
         "allowAfterThis": false,
         "allowAfterThisConstructor": false,
+        "allowFunctionParams": true,
         "enforceInMethodNames": true,
       },
     ],
@@ -1634,6 +1654,12 @@ Object {
     "no-unreachable": Array [
       "error",
     ],
+    "no-unreachable-loop": Array [
+      "off",
+      Object {
+        "ignore": Array [],
+      },
+    ],
     "no-unsafe-finally": Array [
       "error",
     ],
@@ -1646,6 +1672,7 @@ Object {
         "allowShortCircuit": true,
         "allowTaggedTemplates": true,
         "allowTernary": true,
+        "enforceForJSX": false,
       },
     ],
     "no-unused-labels": Array [
@@ -2086,6 +2113,8 @@ Object {
       "error",
       Object {
         "enforceDynamicLinks": "always",
+        "forms": false,
+        "links": true,
       },
     ],
     "react/jsx-no-undef": Array [

@@ -35,12 +35,16 @@ Object {
   },
   "plugins": Array [
     "import",
-    "babel",
+    "@babel",
     "@typescript-eslint",
     "vue",
   ],
   "reportUnusedDisableDirectives": undefined,
   "rules": Object {
+    "@babel/semi": Array [
+      "error",
+      "always",
+    ],
     "@typescript-eslint/adjacent-overload-signatures": Array [
       "error",
     ],
@@ -92,6 +96,9 @@ Object {
         "format": null,
         "selector": "variable",
       },
+    ],
+    "@typescript-eslint/no-array-constructor": Array [
+      "error",
     ],
     "@typescript-eslint/no-empty-interface": Array [
       "error",
@@ -147,6 +154,9 @@ Object {
         "ignoreRestSiblings": true,
         "vars": "all",
       },
+    ],
+    "@typescript-eslint/no-use-before-define": Array [
+      "off",
     ],
     "@typescript-eslint/no-useless-constructor": Array [
       "error",
@@ -229,7 +239,6 @@ Object {
     ],
     "babel/semi": Array [
       "off",
-      "always",
     ],
     "block-scoped-var": Array [
       "error",
@@ -252,6 +261,7 @@ Object {
       "error",
       Object {
         "ignoreDestructuring": false,
+        "ignoreGlobals": false,
         "ignoreImports": false,
         "properties": "never",
       },
@@ -428,6 +438,9 @@ Object {
     "id-blacklist": Array [
       "off",
     ],
+    "id-denylist": Array [
+      "off",
+    ],
     "id-length": Array [
       "off",
     ],
@@ -511,7 +524,7 @@ Object {
       "error",
       Object {
         "ignoreExternal": false,
-        "maxDepth": Infinity,
+        "maxDepth": "∞",
       },
     ],
     "import/no-default-export": Array [
@@ -598,6 +611,7 @@ Object {
       "off",
       Object {
         "caseSensitive": true,
+        "caseSensitiveStrict": false,
         "commonjs": true,
       },
     ],
@@ -628,6 +642,7 @@ Object {
             "internal",
           ],
         ],
+        "warnOnUnassignedImports": false,
       },
     ],
     "import/prefer-default-export": Array [
@@ -836,7 +851,7 @@ Object {
       "warn",
     ],
     "no-array-constructor": Array [
-      "error",
+      "off",
     ],
     "no-async-promise-executor": Array [
       "error",
@@ -1228,6 +1243,9 @@ Object {
     "no-process-exit": Array [
       "off",
     ],
+    "no-promise-executor-return": Array [
+      "off",
+    ],
     "no-proto": Array [
       "error",
     ],
@@ -1251,8 +1269,14 @@ Object {
     ],
     "no-restricted-globals": Array [
       "error",
-      "isFinite",
-      "isNaN",
+      Object {
+        "message": "Use Number.isFinite instead https://github.com/airbnb/javascript#standard-library--isfinite",
+        "name": "isFinite",
+      },
+      Object {
+        "message": "Use Number.isNaN instead https://github.com/airbnb/javascript#standard-library--isnan",
+        "name": "isNaN",
+      },
       "addEventListener",
       "blur",
       "close",
@@ -1470,6 +1494,7 @@ Object {
         "allowAfterSuper": false,
         "allowAfterThis": false,
         "allowAfterThisConstructor": false,
+        "allowFunctionParams": true,
         "enforceInMethodNames": true,
       },
     ],
@@ -1488,6 +1513,12 @@ Object {
     "no-unreachable": Array [
       "error",
     ],
+    "no-unreachable-loop": Array [
+      "off",
+      Object {
+        "ignore": Array [],
+      },
+    ],
     "no-unsafe-finally": Array [
       "error",
     ],
@@ -1500,6 +1531,7 @@ Object {
         "allowShortCircuit": true,
         "allowTaggedTemplates": true,
         "allowTernary": true,
+        "enforceForJSX": false,
       },
     ],
     "no-unused-labels": Array [
@@ -1515,7 +1547,7 @@ Object {
       },
     ],
     "no-use-before-define": Array [
-      "error",
+      "off",
       Object {
         "classes": true,
         "functions": true,
@@ -1538,7 +1570,7 @@ Object {
       "error",
     ],
     "no-useless-constructor": Array [
-      "error",
+      "off",
     ],
     "no-useless-escape": Array [
       "error",

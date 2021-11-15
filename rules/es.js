@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['babel'],
+  plugins: ['@babel'],
   rules: {
     'linebreak-style': 'off',
     'func-names': ['error', 'as-needed'],
@@ -88,7 +88,7 @@ module.exports = {
     ],
     // 使用 babel/semi，实例属性需要加分号
     semi: 'off',
-    'babel/semi': ['error', 'always'],
+    '@babel/semi': ['error', 'always'],
     // 强制三元运算符格式
     'multiline-ternary': ['error', 'always-multiline'],
   },

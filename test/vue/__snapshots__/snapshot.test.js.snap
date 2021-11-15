@@ -32,11 +32,15 @@ Object {
   },
   "plugins": Array [
     "import",
-    "babel",
+    "@babel",
     "vue",
   ],
   "reportUnusedDisableDirectives": undefined,
   "rules": Object {
+    "@babel/semi": Array [
+      "error",
+      "always",
+    ],
     "accessor-pairs": Array [
       "off",
     ],
@@ -80,10 +84,6 @@ Object {
         "before": true,
       },
     ],
-    "babel/semi": Array [
-      "error",
-      "always",
-    ],
     "block-scoped-var": Array [
       "error",
     ],
@@ -105,6 +105,7 @@ Object {
       "error",
       Object {
         "ignoreDestructuring": false,
+        "ignoreGlobals": false,
         "ignoreImports": false,
         "properties": "never",
       },
@@ -281,6 +282,9 @@ Object {
     "id-blacklist": Array [
       "off",
     ],
+    "id-denylist": Array [
+      "off",
+    ],
     "id-length": Array [
       "off",
     ],
@@ -364,7 +368,7 @@ Object {
       "error",
       Object {
         "ignoreExternal": false,
-        "maxDepth": Infinity,
+        "maxDepth": "∞",
       },
     ],
     "import/no-default-export": Array [
@@ -451,6 +455,7 @@ Object {
       "off",
       Object {
         "caseSensitive": true,
+        "caseSensitiveStrict": false,
         "commonjs": true,
       },
     ],
@@ -481,6 +486,7 @@ Object {
             "internal",
           ],
         ],
+        "warnOnUnassignedImports": false,
       },
     ],
     "import/prefer-default-export": Array [
@@ -1081,6 +1087,9 @@ Object {
     "no-process-exit": Array [
       "off",
     ],
+    "no-promise-executor-return": Array [
+      "off",
+    ],
     "no-proto": Array [
       "error",
     ],
@@ -1104,8 +1113,14 @@ Object {
     ],
     "no-restricted-globals": Array [
       "error",
-      "isFinite",
-      "isNaN",
+      Object {
+        "message": "Use Number.isFinite instead https://github.com/airbnb/javascript#standard-library--isfinite",
+        "name": "isFinite",
+      },
+      Object {
+        "message": "Use Number.isNaN instead https://github.com/airbnb/javascript#standard-library--isnan",
+        "name": "isNaN",
+      },
       "addEventListener",
       "blur",
       "close",
@@ -1323,6 +1338,7 @@ Object {
         "allowAfterSuper": false,
         "allowAfterThis": false,
         "allowAfterThisConstructor": false,
+        "allowFunctionParams": true,
         "enforceInMethodNames": true,
       },
     ],
@@ -1341,6 +1357,12 @@ Object {
     "no-unreachable": Array [
       "error",
     ],
+    "no-unreachable-loop": Array [
+      "off",
+      Object {
+        "ignore": Array [],
+      },
+    ],
     "no-unsafe-finally": Array [
       "error",
     ],
@@ -1353,6 +1375,7 @@ Object {
         "allowShortCircuit": true,
         "allowTaggedTemplates": true,
         "allowTernary": true,
+        "enforceForJSX": false,
       },
     ],
     "no-unused-labels": Array [

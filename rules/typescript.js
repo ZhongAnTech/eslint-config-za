@@ -74,7 +74,7 @@ module.exports = {
     ],
 
     semi: 'off',
-    'babel/semi': 'off',
+    '@babel/semi': 'off',
     '@typescript-eslint/semi': ['error', 'always'],
 
     // 'func-call-spacing': 'off',
