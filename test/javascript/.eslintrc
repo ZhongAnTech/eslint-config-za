@@ -1,6 +1,11 @@
 {
   "root": true,
   "extends": "../../index.js",
+  "parserOptions": {
+    "babelOptions": {
+      "plugins": ["@babel/plugin-proposal-class-properties"]
+    }
+  },
   "env": {
     "jest": true
   }

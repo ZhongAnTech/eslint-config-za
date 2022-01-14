@@ -37,7 +37,7 @@ Object {
   "reportUnusedDisableDirectives": undefined,
   "rules": Object {
     "@babel/semi": Array [
-      "error",
+      "off",
       "always",
     ],
     "@typescript-eslint/adjacent-overload-signatures": Array [
@@ -124,6 +124,9 @@ Object {
       "off",
     ],
     "@typescript-eslint/no-parameter-properties": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-redeclare": Array [
       "error",
     ],
     "@typescript-eslint/no-require-imports": Array [
@@ -231,9 +234,6 @@ Object {
         "after": true,
         "before": true,
       },
-    ],
-    "babel/semi": Array [
-      "off",
     ],
     "block-scoped-var": Array [
       "error",
@@ -1248,7 +1248,7 @@ Object {
       "error",
     ],
     "no-redeclare": Array [
-      "error",
+      "off",
     ],
     "no-regex-spaces": Array [
       "error",
@@ -1474,7 +1474,7 @@ Object {
       },
     ],
     "no-undef": Array [
-      "error",
+      "off",
     ],
     "no-undef-init": Array [
       "error",

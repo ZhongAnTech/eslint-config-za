@@ -1,6 +1,8 @@
 module.exports = {
   plugins: ['@typescript-eslint'],
   rules: {
+    'no-undef': 'off',
+
     /* ----------  增强规则  ---------- */
     /**
      * 下列规则基于 ESLint Core 实现
@@ -85,6 +87,9 @@ module.exports = {
 
     // 'no-magic-numbers': 'off',
     // '@typescript-eslint/no-magic-numbers': 'off',
+
+    'no-redeclare': 'off',
+    '@typescript-eslint/no-redeclare': ['error'],
 
     /* ----------  @typescript-eslint v2 BREAKING CHANGES.  ---------- */
 

@@ -20,6 +20,9 @@ Object {
   "parserOptions": Object {
     "allowImportExportEverywhere": false,
     "babelOptions": Object {
+      "plugins": Array [
+        "@babel/plugin-proposal-class-properties",
+      ],
       "presets": Array [
         "@babel/preset-react",
       ],
