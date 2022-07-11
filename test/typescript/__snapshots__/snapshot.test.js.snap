@@ -132,6 +132,9 @@ Object {
     "@typescript-eslint/no-require-imports": Array [
       "off",
     ],
+    "@typescript-eslint/no-shadow": Array [
+      "error",
+    ],
     "@typescript-eslint/no-this-alias": Array [
       "error",
     ],
@@ -1437,7 +1440,7 @@ Object {
       "off",
     ],
     "no-shadow": Array [
-      "error",
+      "off",
     ],
     "no-shadow-restricted-names": Array [
       "error",

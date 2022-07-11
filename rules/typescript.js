@@ -91,6 +91,9 @@ module.exports = {
     'no-redeclare': 'off',
     '@typescript-eslint/no-redeclare': ['error'],
 
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': ['error'],
+
     /* ----------  @typescript-eslint v2 BREAKING CHANGES.  ---------- */
 
     // prefer-interface -> consistent-type-definitions
