@@ -6,8 +6,8 @@ module.exports = {
     './rules/import',
     './rules/vue',
   ].map(require.resolve),
-  parser: 'vue-eslint-parser',
+  parser: require.resolve('vue-eslint-parser'),
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: require.resolve('@babel/eslint-parser'),
   },
 };

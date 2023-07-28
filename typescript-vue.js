@@ -7,9 +7,9 @@ module.exports = {
     './rules/typescript',
     './rules/vue',
   ].map(require.resolve),
-  parser: 'vue-eslint-parser',
+  parser: require.resolve('vue-eslint-parser'),
   parserOptions: {
-    parser: '@typescript-eslint/parser',
+    parser: require.resolve('@typescript-eslint/parser'),
     extraFileExtensions: ['.vue'],
   },
 };

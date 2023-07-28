@@ -7,10 +7,10 @@ module.exports = {
     './rules/jsx-a11y',
     './rules/react',
   ].map(require.resolve),
-  parser: '@babel/eslint-parser',
+  parser: require.resolve('@babel/eslint-parser'),
   parserOptions: {
     babelOptions: {
-      presets: ['@babel/preset-react'],
+      presets: [require.resolve('@babel/preset-react')],
     },
   },
 };

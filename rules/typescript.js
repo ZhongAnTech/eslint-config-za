@@ -116,7 +116,6 @@ module.exports = {
       'error',
       {
         assertionStyle: 'as',
-        objectLiteralTypeAssertions: 'never',
       },
     ],
 

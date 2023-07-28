@@ -6,5 +6,5 @@ module.exports = {
     './rules/import',
     './rules/typescript',
   ].map(require.resolve),
-  parser: '@typescript-eslint/parser',
+  parser: require.resolve('@typescript-eslint/parser'),
 };

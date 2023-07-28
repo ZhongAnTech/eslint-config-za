@@ -5,5 +5,5 @@ module.exports = {
     './rules/es',
     './rules/import',
   ].map(require.resolve),
-  parser: '@babel/eslint-parser',
+  parser: require.resolve('@babel/eslint-parser'),
 };
